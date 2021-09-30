@@ -9,9 +9,13 @@
 <body>
     <header>
         <h1> {{ $saluto }}</h1>
+        <a href="{{url('/blog')}}">Blog</a> 
+        <hr>
+
+        <h4>Navbar non funzionante</h4>
         <nav>
             @foreach ($navbar as $link)
-                <a href=""> {{ $link }}</a> 
+                <a href="{{url("/$link")}}"> {{ $link }}</a> 
             @endforeach
         </nav>
     </header>
