@@ -28,4 +28,19 @@ Route::get('/', function () {
     return view('home', $data);
 });
 
+Route::get('/blog', function () {
+
+    $data = [
+        'title' => 'Blog',
+        'navbar' => [
+            'Home',
+            'Blog',
+            'Contatti',
+            'Policy',
+        ],
+
+    ];
+    return view('blog', $data);
+});
+
 
