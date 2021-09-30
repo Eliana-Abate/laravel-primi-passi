@@ -7,7 +7,7 @@
     <title>Laravel Primi Passi</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1> {{ $saluto }}</h1>
     
 </body>
 </html>
