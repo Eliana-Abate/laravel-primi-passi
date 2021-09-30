@@ -9,6 +9,12 @@
 <body>
     <header>
         <h1> {{$title}}</h1>
+        
+        <nav>
+            @foreach ($navbar as $link => $value)
+            <a href="{{route($link)}}"> {{$value}}</a> 
+            @endforeach
+        </nav>
         <hr>
     </header>
 
