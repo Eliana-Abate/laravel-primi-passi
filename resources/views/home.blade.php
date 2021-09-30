@@ -7,7 +7,16 @@
     <title>Laravel Primi Passi</title>
 </head>
 <body>
-    <h1> {{ $saluto }}</h1>
+    <header>
+        <h1> {{ $saluto }}</h1>
+        <nav>
+            @foreach ($navbar as $link)
+                <a href=""> {{ $link }}</a> 
+            @endforeach
+        </nav>
+    </header>
+    
+
     
 </body>
 </html>
